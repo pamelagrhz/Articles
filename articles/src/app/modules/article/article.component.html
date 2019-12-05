@@ -1,0 +1,8 @@
+<section>
+  <div class="content" *ngFor="let article of articles">
+    <img class="top-image" src="../../assets/images/article/image1.png" />
+    <h2><a [routerLink]="['/articulo', article.id]">{{article.title}}</a></h2>
+    <p [innerHTML]="article.body"></p>
+    <img clas="bottom-image" src="../../assets/images/article/image.png" />
+  </div>
+</section>

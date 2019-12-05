@@ -1,0 +1,10 @@
+<section>
+    <div class="content" *ngFor="let article of (articles$ | async)">
+        <img class="top-image" src="../../assets/images/article/image1.png" />
+        <h2>
+            <a [routerLink]="['/articulos', article.id]">{{article.title}}</a>
+        </h2>
+        <p [innerHTML]="article.body"></p>
+        <img class="bottom-image" src="../../assets/images/article/image.png" />
+    </div>
+</section>

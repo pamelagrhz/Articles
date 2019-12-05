@@ -1,0 +1,15 @@
+<div class="content" *ngIf="(article$ | async) as article">
+  <br>
+  <div class="container">
+
+
+  <img class="top-image" src="../../assets/images/article/image1.png" />
+  <h2>{{ article.title }}</h2>
+  <div class="separator"></div>
+  <p [innerHTML]="article.body">{{ article.body }}</p>
+  <img class="bottom-image" src="../../assets/images/article/image.png" />
+</div>
+
+
+  <br>
+</div>
